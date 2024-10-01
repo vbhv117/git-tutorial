@@ -6,6 +6,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  background: linear-gradient(135deg, #bdc3c7 , #2c3e50); /* Gradient for body */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-container {
@@ -46,6 +54,7 @@ body {
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
 }
 
 .flip-card-back {
@@ -57,8 +66,8 @@ body {
 </head>
 <body>
 
-<h1>Card Flip with Dynamic Text</h1>
-<h3>Hover over the images below:</h3>
+<h1>Git Tutorial</h1>
+<h3>Don't hover over the cards:</h3>
 
 <div class="card-container" id="cardContainer">
   <!-- Cards will be dynamically inserted here -->
@@ -75,13 +84,13 @@ body {
     },
     {
       frontImage: 'img_avatar.png',
-      backTitle: 'Jane Smith',
+      backTitle: 'Jamie Son',
       backText1: 'Marketing Manager',
       backText2: 'Creative and results-driven'
     },
     {
       frontImage: 'img_avatar.png',
-      backTitle: 'Michael Brown',
+      backTitle: 'Jimmy B.M',
       backText1: 'Lead Developer',
       backText2: 'Passionate about coding'
     }
